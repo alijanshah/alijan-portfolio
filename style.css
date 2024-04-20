@@ -1,0 +1,325 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+/* *********************** NAV CSS WORK START ******************************************/
+
+nav {
+  width: 100%;
+  padding: 2vw 2vw;
+  /* border: 1px solid white; */
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.my-logo {
+  /* margin-left: 10px; */
+  color: rgb(160, 193, 198);
+  font-size: 30px;
+  /* border: 1px solid white; */
+}
+.my-logo img {
+  width: 20%;
+  height: 20%;
+  margin-top: 10px;
+}
+.Developer-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.my-logo span {
+  font-family: cursive;
+}
+
+#nav-btn {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  background-color: black;
+  color: rgb(160, 193, 198);
+}
+#nav-btn h4 {
+  padding: 10px 20px;
+  border: 2px solid rgb(160, 193, 198);
+  border-radius: 50px;
+  font-weight: 500;
+
+  font-size: 18 px;
+  position: relative;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+#nav-btn h4::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(160, 193, 198);
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+#nav-btn h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+#nav-btn h4 a {
+  text-decoration: none;
+  color: rgb(160, 193, 198);
+  position: relative;
+  z-index: 9;
+}
+#nav-btn h4:hover a {
+  color: black;
+}
+.hr {
+  border: 2px solid rgb(160, 193, 198);
+  width: 100%;
+}
+
+/* *********************** NAV CSS WORK CLOSED ******************************************/
+
+/***************************MAIN-PAGE CSS WORK START  ******************************************/
+.main-page {
+  width: 100%;
+  height: 80vh;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  /* margin-top: 15px; */
+}
+.about-my-self {
+  height: 40%;
+  width: 40%;
+  text-align: center;
+  line-height: 1.4;
+  padding-top: 8%;
+  color: rgb(160, 193, 198);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: oblique;
+  opacity: 0.5;
+}
+
+.about-my-self span a {
+  color: rgb(173, 227, 235);
+  text-decoration: none;
+}
+
+.image img {
+  border: 5px solid rgb(173, 227, 235);
+  border-radius: 15px;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+
+/***************************MAIN-PAGE CSS WORK CLOSED  ******************************************/
+
+#moving-text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+#moving-text h1 {
+  font-size: 9vw;
+  display: inline-block;
+  color: rgb(173, 227, 235);
+  background-color: black;
+  font-family: cursive;
+  /* background-color: lightskyblue; */
+}
+.con {
+  /* background-color: lightskyblue; */
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-color: black;
+}
+#gola {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: rgb(173, 227, 235);
+  display: inline-block;
+  margin: 1vw 3vw;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*************************** MY-ABOUT CSS WORK START  ******************************************/
+
+.my-about {
+  width: 100%;
+  /* border: 2px solid blue; */
+  /* margin-top: 10px; */
+  /* margin-left: 15%; */
+  line-height: 1.5;
+  background-color: black;
+  color: rgb(173, 227, 235);
+  padding: 10px 30px;
+}
+.my-about fieldset {
+  width: 100%;
+  padding: 10px;
+  border-top: 2px solid rgb(173, 227, 235);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.my-about #abc a {
+  color: rgb(173, 227, 235);
+}
+
+.my-about h1,
+h3 {
+  opacity: 0.6;
+}
+
+.coure {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.6;
+  color: bisque;
+}
+/*************************** MY-ABOUT CSS WORK CLOSED  ******************************************/
+
+.my-work {
+  width: 100%;
+  height: fit-content;
+  line-height: 1.5;
+  background-color: black;
+  color: rgb(173, 227, 235);
+  padding: 10px 30px;
+  border-top: 2px solid rgb(173, 227, 235);
+  border-width: 80%;
+}
+.work-container {
+  width: 90%;
+  height: fit-content;
+  border: 3px solid rgb(173, 227, 235);
+  border-top-width: 70%;
+  border-bottom-width: 70%;
+  border-left-width: 70%;
+  border-right-width: 70%;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.my-work h1 {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  /* border-top: 2px solid rgb(173, 227, 235); */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+}
+.my-work #bbc a {
+  color: rgb(173, 227, 235);
+  opacity: 0.4;
+}
+.my-work .project-img-01 img {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  margin: 30px;
+  margin-left: 0%;
+  border-top: 2px solid rgb(173, 227, 235);
+}
+
+.project-img-01 .ms-btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: brown;
+  background-color: rgb(173, 227, 235);
+}
+
+.project-img-02 img {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  /* margin-top: 20%; */
+  margin: 30px;
+  border-top: 2px solid rgb(173, 227, 235);
+}
+
+.project-img-02 .form-btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: brown;
+  background-color: rgb(173, 227, 235);
+}
+
+.project-img-03 img {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  /* margin-top: 20%; */
+  margin: 30px;
+  border-top: 2px solid rgb(173, 227, 235);
+}
+
+.project-img-03 .dyt-btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: brown;
+  background-color: rgb(173, 227, 235);
+}
+
+/* ********************************FOOTER-SECTION CSS START HERE ********************** */
+
+.footer {
+  padding: 50px;
+  background-color: black;
+  color: rgb(173, 227, 235);
+  display: flex;
+  justify-content: space-between;
+  font-family: cursive;
+}
+
+/* ********************************FOOTER-SECTION CSS CLOSED HERE ********************** */
